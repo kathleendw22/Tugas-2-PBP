@@ -4,13 +4,9 @@ TUGAS 2 PBP
 
 Link menuju aplikasi Heroku yang sudah dideploy:
 https://tugasduapebepe.herokuapp.com/
-# dengan path
-https://tugasduapebepe.herokuapp.com/katalog/
 
-1. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
-# bagan 
+# Bagan dan Penjelasan
 https://ristek.link/BaganRequestClient 
-# penjelasan
 - User mengirim HTTP request pada server Django melalui browser internet
 - Terdapat bagian/bot pada server yang mendeteksi dan mengekstraksi host dan port dari HTTP request user
 - URL routing akan menentukan dan mengarahkan rute ke source code yang diinginkan. Pada server Django, URL routing dilakukan pada urls.py dimana file tersebut berisi path-path yang bisa diakses
@@ -19,10 +15,10 @@ https://ristek.link/BaganRequestClient
 - Views.py akan mengambil template file HTML, lalu data yang sudah diberikan oleh models.py akan ditambahkan ke file HTML tersebut. Template file HTML bisa berbeda-beda untuk setiap path
 - File HTML yang sudah diisi oleh data yang diinginkan akan dikembalikan ke user sebagai HTTP response melalui browser internet
 
-2. Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
+# Virtual Environment
 Virtual environment adalah sebuah lingkungan virtual yang tidak bisa diakses oleh dependencies utama. Oleh karena itu, virtual environment penting untuk digunakan karena dapat memisahkan dependencies yang diinstal pada setiap proyek Django sehingga perubahan yang dilakukan pada satu proyek tidak akan mempengaruhi proyek lainnya. Kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment. Namun, akan lebih baik jika setiap proyek Django memiliki virtual environment-nya sendiri agar perubahan yang terjadi pada satu proyek tidak akan berpengaruh pada proyek lain.
 
-3. Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
+# Implementasi poin 1 sampai 4
 - Masuk ke repositori source code yang disediakan dan memilih aksi "Use this template" (membuat repositori baru untuk aplikasi Django bernama "Tugas-2-PBP")
 - Mengclone repositori tersebut ke laptop
 - Masuk ke dalam repositori yang sudah diclone ke laptop pada terminal
