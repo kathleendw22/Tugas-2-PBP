@@ -4,6 +4,8 @@ Kathleen Daniella Wijaya | 2106637366
 Link menuju aplikasi Heroku yang sudah dideploy:
 https://tugasduapebepe.herokuapp.com/
 
+dengan path: https://tugasduapebepe.herokuapp.com/katalog/ 
+
 # Bagan dan Penjelasan
 https://ristek.link/BaganRequestClient 
 - User mengirim HTTP request pada server Django melalui browser internet
