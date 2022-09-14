@@ -1,6 +1,5 @@
-Nama: Kathleen Daniella Wijaya
-NPM: 2106637366 
-TUGAS 2 PBP
+Kathleen Daniella Wijaya | 2106637366 
+# TUGAS 2 PBP
 
 Link menuju aplikasi Heroku yang sudah dideploy:
 https://tugasduapebepe.herokuapp.com/
