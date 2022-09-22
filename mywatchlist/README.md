@@ -4,11 +4,13 @@ Kathleen Daniella Wijaya | 2106637366
 
 Link menuju aplikasi Heroku yang sudah dideploy: https://tugasduapebepe.herokuapp.com/
 
-HTML: https://tugasduapebepe.herokuapp.com/mywatchlist/html/
+HTML mywatchlist: https://tugasduapebepe.herokuapp.com/mywatchlist/html/
 
-XML: https://tugasduapebepe.herokuapp.com/mywatchlist/xml/
+XML mywatchlist: https://tugasduapebepe.herokuapp.com/mywatchlist/xml/
 
-JSON: https://tugasduapebepe.herokuapp.com/mywatchlist/json/
+JSON mywatchlist: https://tugasduapebepe.herokuapp.com/mywatchlist/json/
+
+Screenshot Postman: https://ristek.link/ScreenshotPostman 
 
 # Perbedaan JSON, XML, dan HTML
 XML (eXtensible Markup Language) adalah data delivery yang self-descriptive sehingga manusia dapat dengan mudah memahami informasi yang disajikan dari XML tersebut. XML digunakan pada banyak aplikasi web dan mobile untuk menyimpan dan mengirimkan data. Dokumen XML membentuk struktur seperti tree yang dimulai dari root yang merupakan parent dari elemen lainnya, lalu branch, dan berakhir pada leaves. Informasi yang disajikan pada dokumen tersebut dibungkus dengan tag (semua elemen XML perlu memiliki closing tag). Tag XML ini bersifat case-sensitive.
