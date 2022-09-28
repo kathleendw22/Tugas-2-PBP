@@ -10,7 +10,7 @@ from todolist.views import create_task
 app_name = 'todolist'
 
 urlpatterns = [
-    path(' ', show_todolist, name='show_todolist'),
+    path('', show_todolist, name='show_todolist'),
     path('xml/', show_xml, name='show_xml'),
     path('json/', show_json, name='show_json'),
     path('register/', register, name='register'),
