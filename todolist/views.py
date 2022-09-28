@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from todolist.models import Task
-from django.http import HttpResponse
-from django.core import serializers
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
@@ -24,14 +22,6 @@ def show_todolist(request):
         'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
-
-def show_xml(request):
-    todolist_item = Task.objects.all()
-    return HttpResponse(serializers.serialize("xml", todolist_item), content_type="application/xml")
-
-def show_json(request):
-    todolist_item = Task.objects.all()
-    return HttpResponse(serializers.serialize("json", todolist_item), content_type="application/json")
 
 def register(request):
     form = UserCreationForm()
@@ -73,7 +63,6 @@ def create_task(request):
     if request.method == 'POST':
         form = AddTask(request.POST)
         if form.is_valid():
-            form.save(commit = False)
             title = form.cleaned_data['title']
             description = form.cleaned_data['description']
             addTask = Task(user=request.user, title=title, description=description, date=datetime.datetime.now())
