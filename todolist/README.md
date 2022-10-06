@@ -37,10 +37,13 @@ Pertama-tama, user melakukan request. Request tersebut bisa dilakukan dengan ber
 
 # Perbedaan Inline, Internal, dan External CSS
 - Inline Style: inline tag of html
+
 Pada inline CSS, atribut < style > digunakan untuk memberikan style ke tag HTML tertentu. Maka dari itu, tipe ini kurang direkomendasikan karena setiap tag HTML perlu diberikan style masing-masing. Namun, manfaat dari tipe ini adalah penerapan yang cepat dan ringkas, mudah melihat dan menguji perubahan pada website HTML, dan berguna jika ingin melakukan perbaikan cepat.
 - Internal Style: inside html
+
 Pada internal CSS, CSS diletakkan dalam bagian < head > pada halaman HTML. Style CSS yang dipasang dengan metode ini akan diunduh setiap kali halaman dipanggil sehingga akan meningkatkan kecepatan akses website. Selain itu, tipe ini tidak efisien jika ingin menggunakan CSS yang sama pada beberapa file karena perubahan hanya terjadi pada 1 halaman HTML saja. Namun jika menggunakan tipe ini, kita tidak perlu mengupload beberapa file karena HTML dan CSS digunakan pada file yang sama. Sama dengan inline style, tipe ini juga bermanfaat jika ingin melihat dan menguji perubahan pada website HTML.
 - External Style: separated file
+
 External CSS adalah salah satu cara yang paling nyaman untuk menambahkan CSS ke file HTML karena file HTML akan dihubungkan dengan file CSS eksternal. Dengan tipe ini, perubahan apapun yang dibuat pada file CSS akan tampil pada website secara keseluruhan. Implementasi external CSS biasanya dilakukan dengan < link rel="stylesheet" type="text/css" href="style.css" /> pada bagian < head >.
 Kelebihan dari tipe ini adalah ukuran file HTML menjadi lebih kecil dan strukturnya menjadi lebih rapi sehingga kecepatan loading website menjadi lebih cepat. Selain itu, file CSS yang sama bisa digunakan untuk banyak halaman HTML sehingga tidak perlu diulang-ulang. Namun, kekurangan dari tipe ini adalah halaman HTML belum tampil dengan sempurna hingga file CSS selesai dipanggil.
 
@@ -71,14 +74,17 @@ Kelebihan dari tipe ini adalah ukuran file HTML menjadi lebih kecil dan struktur
 
 # Tipe CSS Selector
 - Class Selector
+
 Class selector adalah selektor yang memilih elemen berdasarkan nama class yang diberikan. Selektor ini dibuat dengan tanda titik (.) di depannya. Pada pengerjaan tugas 5 PBP ini, saya menggunakan class selector. Contohnya:
 .wrapper .help-text {
     font-size: 0.7rem;
     color: #8b3e3a;
 }
 - ID Selector
+
 ID selector mirip dengan class selector. Bedanya adalah ID bersifat unik dan hanya boleh digunakan oleh satu elemen saja. Selektor ID ditandai dengan tanda pagar (#) di depannya.
 - Element Selector
+
 Seperti namanya, element selector memilih elemen berdasarkan elemen. Contohnya jika terdapat:
 p {
   background-color: yellow;
