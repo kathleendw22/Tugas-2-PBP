@@ -10,6 +10,9 @@ import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from todolist.forms import AddTask
+from django.http import HttpResponse
+from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
 
 # TODO: Create your views here.
 
@@ -22,6 +25,22 @@ def show_todolist(request):
         'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
+
+@login_required(login_url='/todolist/login/')
+@csrf_exempt
+def add_task(request):
+    if request.method == "POST":
+        title = request.POST.get("title")
+        description = request.POST.get("description")
+        Task.objects.create(user=request.user, title=title, description=description, date=datetime.datetime.now())
+        return HttpResponse()
+    else:
+        print("here")
+        return redirect("todolist:show_todolist")
+
+def show_json(request):
+    todolist_item = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", todolist_item), content_type="application/json")
 
 def register(request):
     form = UserCreationForm()
