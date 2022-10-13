@@ -63,16 +63,16 @@
         $.get("json/", function(data) {
             for(var i = 0; i < data.length; i++){
                 var tr = document.createElement("tr");
-                var date_td = document.createElement("td");
-                date_td.append(data[i].fields.date);
                 var title_td = document.createElement("td");
                 title_td.append(data[i].fields.title);
                 var description_td = document.createElement("td");
                 description_td.append(data[i].fields.description);
+                var date_td = document.createElement("td");
+                date_td.append(data[i].fields.date);
                 
-                tr.append(date_td);
                 tr.append(title_td);
                 tr.append(description_td);
+                tr.append(date_td);
                 
                 $(".table").append(tr);
             }
