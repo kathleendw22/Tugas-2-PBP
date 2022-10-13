@@ -60,7 +60,7 @@
                 $(".table > tbody > tr:nth-child(" + i + ")").remove();
         }
 
-        $.get("http://localhost:8000/todolist/json/", function(data) {
+        $.get("json/", function(data) {
             for(var i = 0; i < data.length; i++){
                 var tr = document.createElement("tr");
                 var date_td = document.createElement("td");
@@ -100,7 +100,7 @@
             var title = $("#input_title").val();
             var description = $("#input_description").val();
             validate();
-            $.post("http://localhost:8000/todolist/add/",
+            $.post("add/",
             {
                 title,
                 description,
